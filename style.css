@@ -596,7 +596,11 @@ li {
     border-radius: 20px 20px 0 0;
 }
 .service h4{
-    padding-block: 10px;
+    padding-block: 15px;
+    color: var(--white-font);
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 400;
 }
 @media (max-width:767px) {
     .service{
