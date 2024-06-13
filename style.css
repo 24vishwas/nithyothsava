@@ -827,8 +827,10 @@ footer{
     .footer-item h2{
         margin-inline: auto;
         /* text-align: center; */
-
         
+    }
+    .footer-item ul li a{
+        justify-content: center;
     }
 }
 
