@@ -8,7 +8,7 @@ html {
     --bg-color:#FFEFD6;
     --white-font:#FFFFFF;
     --orange-font:#DD7F24;
-    --border-gredient:linear-gradient(45deg, rgba(140,66,29,1) 0%, rgba(251,230,123,1) 33%, rgba(252,251,231,1) 54%, rgba(247,209,78,1) 77%, rgba(212,160,65,1) 100%);
+    --border-gredient:linear-gradient(90deg, rgba(140,66,29,1) 0%, rgba(251,230,123,1) 33%, rgba(252,251,231,1) 54%, rgba(247,209,78,1) 77%, rgba(212,160,65,1) 100%);
     
     --green-bg:#19381F;
     --btn-green:#518F5D;
@@ -414,6 +414,7 @@ li {
 .halls-container{
     display: flex;
     align-items: flex-start;
+    margin-top: 5%;
 }
 .hall .img-wrapper img{
     width: 100%;
@@ -433,11 +434,11 @@ li {
     margin-inline: auto;
 }
 .hall-content h3{
-    color: var(--green-shade);
+    color: var(--white-font);
     margin-block: 20px;
 }
 .hall-content p{
-    color: var(--green-bg);
+    color: var(--white-font);
     text-align: justify;
 }
 @media (max-width:767px) {
@@ -845,3 +846,26 @@ footer{
 }
 
 /* footer end */
+.gradient-border1 {
+    border-radius: 20px;
+    position: relative;
+    border: none;
+  }
+  
+  .gradient-border1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 20px;
+    background: var(--border-gredient),
+  linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+            mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+  }
