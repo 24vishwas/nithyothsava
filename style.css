@@ -414,7 +414,7 @@ li {
 .halls-container{
     display: flex;
     align-items: flex-start;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 .hall .img-wrapper img{
     width: 100%;
