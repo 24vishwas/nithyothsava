@@ -146,8 +146,8 @@ li {
 
 
 .logo img {
-    height: 45px;
-    width: 45px;
+    height: auto;
+    width: 100px;
     object-fit: cover;
     object-position: center;
 
@@ -788,6 +788,11 @@ footer{
     text-align: justify;
     width: 100%;
     max-width: 300px;
+}
+.about img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
 }
 
 .footer-item h2{
