@@ -682,7 +682,7 @@ li {
     height: auto;
     aspect-ratio: 4/3;
     font-size: 0;
-    box-shadow: 0 4px 8px rgba(2, 78, 19, 0.9);
+    /* box-shadow: 0 4px 8px rgba(2, 78, 19, 0.9); */
 }
 @media (max-width:767px) {
     .gallery-wrapper .img-wrapper{
@@ -1141,4 +1141,95 @@ footer{
     width: 300px;
 
     aspect-ratio: 13/9;
+}
+
+
+
+h1.container{
+    color: var(--white-font);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* about page  */
+/* Culinary */
+.culinary-section{
+    margin-block: 5%;
+}
+.culinary-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.culinary-container .content{
+    width: 40%;
+}
+.culinary-container .content p{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 25px;
+}
+.culinary-container .img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.culinary-container .img-wrapper{
+    width: 40%;
+    font-size: 0;
+}
+@media (max-width:767px) {
+    .culinary-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .culinary-container .content{
+        width: 100%;
+    }
+    .culinary-container .img-wrapper{
+        width: 100%;
+    }
+}
+/* culinary-section end */
+
+/* experience section */
+.experience-section{
+    margin-block: 5%;
+    background-color: var(--green-bg);
+    padding-block: 5%;
+}
+.experience-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-green);
+}
+.experience-container .content{
+    width: 40%;
+}
+.experience-container .content p{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 25px;
+}
+.experience-container .img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.experience-container .img-wrapper{
+    width: 40%;
+}
+@media (max-width:767px) {
+    .experience-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .experience-container .content{
+        width: 100%;
+    }
+    .experience-container .img-wrapper{
+        width: 100%;
+    }
 }
