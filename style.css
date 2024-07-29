@@ -549,7 +549,20 @@ li {
     margin-top: 10px;
     text-align: justify;
     line-height: 20px;
-    
+}
+.why-choose-contant{
+    text-align: left;
+}
+.why-choose-contant h3{
+    text-align: center;
+}
+.why-choose-contant li{
+    list-style: disc;
+    margin-block: 10px;
+}
+.why-choose-contant ul{
+    padding-left: 20px;
+    margin-top: 10px;
 }
 .achivement-container{
     display: flex;
