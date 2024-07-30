@@ -53,16 +53,12 @@
     </nav>
     <section class="banner-section">
         <div class="banner-container container">
-            <div class="banner" style="background-image:url(./assets/banner-about.png) ;">
+            <div class="banner" style="background-image:url(./assets/catering.webp) ;">
                 <h1>Catering Services</h1>
             </div>
         </div>
     </section>
-    <section class="service-img" >
-        <div class="img-wrapper">
-            <img src="./assets/main-img.png" alt="image">
-        </div>
-    </section>
+   
     <section class="space-section">
         <div class="space-container container">
             <h1>Meals That Wow, From Kitchen To Plate
@@ -91,15 +87,19 @@
             </p>
             <div class="img-container">
                 <div class="img-wrapper">
-                    <img src="./assets/catering.webp" alt="image">
+                    <img src="./assets/catering.webp" alt="Catering" onclick="openLightbox('./assets/catering.webp')">
                 </div>
                 <div class="img-wrapper">
-                    <img src="./assets/catering2.webp" alt="image">
+                    <img src="./assets/catering2.webp" alt="Catering 2" onclick="openLightbox('./assets/catering2.webp')">
                 </div>
                 <div class="img-wrapper">
-                    <img src="./assets/dineing-hall.webp" alt="image">
+                    <img src="./assets/dineing-hall.webp" alt="Dining Hall" onclick="openLightbox('./assets/dineing-hall.webp')">
                 </div>
             </div>
+        </div>
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
         </div>
     </section>
 

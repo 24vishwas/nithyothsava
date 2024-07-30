@@ -53,16 +53,12 @@
     </nav>
     <section class="banner-section">
         <div class="banner-container container">
-            <div class="banner" style="background-image:url(./assets/banner-about.png) ;">
+            <div class="banner" style="background-image:url(./assets/main-hall.webp) ;">
                 <h1>Event Spaces</h1>
             </div>
         </div>
     </section>
-    <section class="service-img" >
-        <div class="img-wrapper">
-            <img src="./assets/main-img.png" alt="image">
-        </div>
-    </section>
+   
     <section class="space-section">
         <div class="space-container container">
             <h1>Picture-Perfect Party & Gathering Places
@@ -87,15 +83,22 @@
             </p>
             <div class="img-container">
                 <div class="img-wrapper">
-                    <img src="./assets/hall-1.png" alt="image">
+                    <img src="./assets/main-hall.webp" alt="Main Hall" onclick="openLightbox('./assets/main-hall.webp')">
                 </div>
                 <div class="img-wrapper">
-                    <img src="./assets/gallery-8.png" alt="image">
+                    <img src="./assets/expensive-hall.webp" alt="Expensive Hall" onclick="openLightbox('./assets/expensive-hall.webp')">
                 </div>
                 <div class="img-wrapper">
-                    <img src="./assets/hall-2.png" alt="image">
+                    <img src="./assets/decoration.webp" alt="Decoration" onclick="openLightbox('./assets/decoration.webp')">
+                </div>
+                <div class="img-wrapper">
+                    <img src="./assets/main-hall2.webp" alt="Main Hall 2" onclick="openLightbox('./assets/main-hall2.webp')">
                 </div>
             </div>
+        </div>
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
         </div>
     </section>
 

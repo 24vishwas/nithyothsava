@@ -33,12 +33,12 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="services.html">Services</a>
                 </li>
                 <li>
                     <a href="gallery.html">gallery</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#contact">contact</a>
                 </li>
@@ -106,7 +106,7 @@
         <div class="halls-container">
             <div class="hall">
                 <div class="img-wrapper gradient-border1">
-                    <img src="./assets/hall-1.png" alt="image">
+                    <img src="./assets/main-hall.webp" alt="image">
                 </div>
                 <div class="hall-content">
                     <h3>Grand Event Hall</h3>
@@ -117,7 +117,7 @@
             </div>
             <div class="hall">
                 <div class="img-wrapper gradient-border1">
-                    <img src="./assets/hall-main.webp" alt="image">
+                    <img src="./assets/expensive-hall.webp" alt="image">
                 </div>
                 <div class="hall-content">
                     <h3>Expansive hall</h3>
@@ -281,7 +281,7 @@ Your special day, our grand space - a traditional approach with modern comforts.
             <div class="service-wrapper ">
                 <a href="event.html" class="service gradient-border1">
                     <div class="img-wrapper">
-                        <img src="./assets/service-1.png" alt="image">
+                        <img src="./assets/main-hall.webp" alt="image">
                     </div>
                     <h4>Event Spaces</h4>
                 </a>
@@ -293,87 +293,163 @@ Your special day, our grand space - a traditional approach with modern comforts.
                 </a> -->
                 <a href="catering.html" class="service gradient-border1">
                     <div class="img-wrapper">
-                        <img src="./assets/service-3.png" alt="image">
+                        <img src="./assets/catering.webp" alt="image">
                     </div>
                     <h4>Catering Services</h4>
                 </a>
                 <a href="planning.html" class="service gradient-border1">
                     <div class="img-wrapper">
-                        <img src="./assets/service-4.png" alt="image">
+                        <img src="./assets/decoration.webp" alt="image">
                     </div>
                     <h4>Event Planning Assistance</h4>
                 </a>
-                <a href="decor.html" class="service gradient-border1">
+                <!-- <a href="decor.html" class="service gradient-border1">
                     <div class="img-wrapper">
                         <img src="./assets/service-5.png" alt="image">
                     </div>
                     <h4>Decor and Setup</h4>
-                </a>
-                <a href="technical.html" class="service gradient-border1">
+                </a> -->
+                <!-- <a href="technical.html" class="service gradient-border1">
                     <div class="img-wrapper">
                         <img src="./assets/support (1).webp" alt="image">
                     </div>
                     <h4>Technical Support</h4>
-                </a>
-                <a href="accessibility.html" class="service gradient-border1">
+                </a> -->
+                <!-- <a href="accessibility.html" class="service gradient-border1">
                     <div class="img-wrapper">
                         <img src="./assets/service-7.png" alt="image">
                     </div>
                     <h4>Accessibility</h4>
-                </a>
-                <a href="security.html" class="service gradient-border1">
+                </a> -->
+                <a href="accomodation.html" class="service gradient-border1">
                     <div class="img-wrapper">
-                        <img src="./assets/service-8.png" alt="image">
+                        <img src="./assets/accomodation1.webp" alt="image">
                     </div>
-                    <h4>Security</h4>
+                    <h4>Accommodation</h4>
                 </a>
                 <a href="parking.html" class="service gradient-border1">
                     <div class="img-wrapper">
-                        <img src="./assets/service-9.png" alt="image">
+                        <img src="./assets/parking1.webp" alt="image">
                     </div>
                     <h4>Parking Facilities</h4>
                 </a>
-                <a href="washing.html" class="service gradient-border1">
+                <!-- <a href="washing.html" class="service gradient-border1">
                     <div class="img-wrapper">
                         <img src="./assets/service-10.png" alt="image">
                     </div>
                     <h4>Cleaning Services</h4>
-                </a>
+                </a> -->
             </div>
         </div>
     </section>
     <section class="gallery-section">
         <div class="gallery-container container">
-            <h1>
-                Our Gallery
-            </h1>
+            <h1>Our Gallery</h1>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showCategory('hall')">Hall</button>
+                <button class="tab-button" onclick="showCategory('dining')">Dining</button>
+                <button class="tab-button" onclick="showCategory('corridor')">Corridor</button>
+                <button class="tab-button" onclick="showCategory('outside')">Outside</button>
+                <button class="tab-button" onclick="showCategory('rooms')">Rooms</button>
+                <button class="tab-button" onclick="showCategory('art')">Art</button>
+            </div>
             <div class="gallery-wrapper">
-                <div class="img-wrapper">
-                    <img src="./assets/hall-1.png" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/hall-1.png" alt="Hall 1" onclick="openLightbox('./assets/hall-1.png')">
                 </div>
-                <div class="img-wrapper">
-                    <img src="./assets/hall-2.png" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/hall-2.png" alt="Hall 2" onclick="openLightbox('./assets/hall-2.png')">
                 </div>
-
-                <div class="img-wrapper">
-                    <img src="./assets/gallery-3.png" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/hall-main.webp" alt="Main Hall" onclick="openLightbox('./assets/hall-main.webp')">
                 </div>
-                <div class="img-wrapper">
-                    <img src="./assets/dineing-hall.webp" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/expensive-hall.webp" alt="Main Hall" onclick="openLightbox('./assets/expensive-hall.webp')">
                 </div>
-                <div class="img-wrapper">
-                    <img src="./assets/hall-main.webp" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/main-hall.webp" alt="Main Hall" onclick="openLightbox('./assets/main-hall.webp')">
                 </div>
-                <div class="img-wrapper">
-                    <img src="./assets/art.webp" alt="image">
+                <div class="img-wrapper hall">
+                    <img src="./assets/main-hall2.webp" alt="Main Hall" onclick="openLightbox('./assets/main-hall2.webp')">
                 </div>
-                <div class="img-wrapper">
-                    <img src="./assets/hall-collidor.webp" alt="image">
+                <div class="img-wrapper dining">
+                    <img src="./assets/dineing-hall.webp" alt="Dining Hall" onclick="openLightbox('./assets/dineing-hall.webp')">
+                </div>
+                <div class="img-wrapper art">
+                    <img src="./assets/art.webp" alt="Art" onclick="openLightbox('./assets/art.webp')">
+                </div>
+                <div class="img-wrapper art">
+                    <img src="./assets/art2.JPG" alt="Art" onclick="openLightbox('./assets/art2.jpg')">
+                </div>
+                <div class="img-wrapper art">
+                    <img src="./assets/art3.JPG" alt="Art" onclick="openLightbox('./assets/art3.JPG')">
+                </div>
+                <div class="img-wrapper art">
+                    <img src="./assets/art4.JPG" alt="Art" onclick="openLightbox('./assets/art4.JPG')">
+                </div>
+                <div class="img-wrapper hall">
+                    <img src="./assets/hall-collidor.webp" alt="Hall Corridor" onclick="openLightbox('./assets/hall-collidor.webp')">
+                </div>
+                <div class="img-wrapper dining">
+                    <img src="./assets/catering.webp" alt="Hall Corridor" onclick="openLightbox('./assets/catering.webp')">
+                </div>
+                <div class="img-wrapper dining">
+                    <img src="./assets/catering2.webp" alt="Hall Corridor" onclick="openLightbox('./assets/catering2.webp')">
+                </div>
+                <div class="img-wrapper dining">
+                    <img src="./assets/catering3.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/catering3.JPG')">
+                </div>
+                <div class="img-wrapper rooms">
+                    <img src="./assets/accomodation1.webp" alt="Hall Corridor" onclick="openLightbox('./assets/accomodation1.webp')">
+                </div>
+                <div class="img-wrapper rooms">
+                    <img src="./assets/accomodation2.webp" alt="Hall Corridor" onclick="openLightbox('./assets/accomodation2.webp')">
+                </div>
+                <div class="img-wrapper rooms">
+                    <img src="./assets/accomodation3.webp" alt="Hall Corridor" onclick="openLightbox('./assets/accomodation3.webp')">
+                </div>
+                <div class="img-wrapper rooms">
+                    <img src="./assets/accomodation4.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/accomodation4.JPG')">
+                </div>
+                <div class="img-wrapper outside">
+                    <img src="./assets/parking1.webp" alt="Hall Corridor" onclick="openLightbox('./assets/parking1.webp')">
+                </div>
+                <div class="img-wrapper outside">
+                    <img src="./assets/parking2.webp" alt="Hall Corridor" onclick="openLightbox('./assets/parking2.webp')">
+                </div>
+                <div class="img-wrapper outside">
+                    <img src="./assets/parking3.webp" alt="Hall Corridor" onclick="openLightbox('./assets/parking3.webp')">
+                </div>
+                <div class="img-wrapper outside">
+                    <img src="./assets/parking4.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/parking4.JPG')">
+                </div>
+                <div class="img-wrapper outside">
+                    <img src="./assets/parking5.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/parking5.JPG')">
+                </div>
+                <div class="img-wrapper corridor">
+                    <img src="./assets/corridor2.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/corridor2.JPG')">
+                </div>
+                <div class="img-wrapper corridor">
+                    <img src="./assets/corridor3.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/corridor3.JPG')">
+                </div>
+                <div class="img-wrapper corridor">
+                    <img src="./assets/corridor4.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/corridor4.JPG')">
+                </div>
+                <div class="img-wrapper corridor">
+                    <img src="./assets/corridor1.JPG" alt="Hall Corridor" onclick="openLightbox('./assets/corridor1.jpg')">
                 </div>
             </div>
-            <button class="primary-btn gradient-border"><a href="gallery.html">Take The Tour</a></button>
+            <button class="primary-btn gradient-border">
+                <a href="gallery.html">Take The Tour</a>
+            </button>
         </div>
     </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
     <section class="contact-section" id="contact">
         <div class="contact-container container">
             <div class="contact-content">
