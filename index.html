@@ -298,6 +298,7 @@ Your special day, our grand space - a traditional approach with modern comforts.
                 <button class="tab-button" onclick="showCategory('outside')">Parking</button>
                 <button class="tab-button" onclick="showCategory('rooms')">Rooms</button>
                 <button class="tab-button" onclick="showCategory('art')">Art</button>
+                <button class="tab-button" onclick="showCategory('lawn')">Lawn</button>
             </div>
             <div class="gallery-wrapper">
                 <div class="img-wrapper hall">
@@ -332,6 +333,21 @@ Your special day, our grand space - a traditional approach with modern comforts.
                 </div>
                 <div class="img-wrapper art">
                     <img src="./assets/art4.webp" alt="Art" onclick="openLightbox('./assets/art4.webp')">
+                </div>
+                <div class="img-wrapper lawn">
+                    <img src="./assets/lawn1.webp" alt="lawn" onclick="openLightbox('./assets/lawn1.webp')">
+                </div>
+                <div class="img-wrapper lawn">
+                    <img src="./assets/lawn2.webp" alt="lawn" onclick="openLightbox('./assets/lawn2.webp')">
+                </div>
+                <div class="img-wrapper lawn">
+                    <img src="./assets/lawn4.webp" alt="lawn" onclick="openLightbox('./assets/lawn4.webp')">
+                </div>
+                <div class="img-wrapper lawn">
+                    <img src="./assets/lawn4.webp" alt="lawn" onclick="openLightbox('./assets/lawn4.webp')">
+                </div>
+                <div class="img-wrapper lawn">
+                    <img src="./assets/lawn5.webp" alt="lawn" onclick="openLightbox('./assets/lawn5.webp')">
                 </div>
                 <div class="img-wrapper hall">
                     <img src="./assets/hall-collidor.webp" alt="Hall Corridor" onclick="openLightbox('./assets/hall-collidor.webp')">
@@ -396,6 +412,44 @@ Your special day, our grand space - a traditional approach with modern comforts.
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
     </div>
+    <section class="testimonial-section ">
+        <div class="container">
+        <h1>
+            Testimonials
+        </h1>
+        <div class="testimonial-slider">
+            <div class="review-slides">
+                <div class="review-slide">
+                    <div class="content-wrapper" >
+                       
+                        <p>
+                            I think your story is very good. We used to go to the Gandhinagar store earlier, and we
+                            always found a great variety there. Although we are locals, we decided to visit this store, and
+                            I am delighted to see the wide variety of diamonds, gold, and everything else you offer.
+                        </p>
+                        <p class="testimonial-author"> - abc Joe</p>
+                    </div>
+                </div>
+                <div class="review-slide">
+                    <div class="content-wrapper" >
+                       
+                        <p>
+                            I think your story is very good. We used to go to the Gandhinagar store earlier, and we
+                            always found a great variety there. Although we are locals, we decided to visit this store, and
+                            I am delighted to see the wide variety of diamonds, gold, and everything else you offer.
+                        </p>
+                        <p class="testimonial-author"> - abc Joe</p>
+                    </div>
+                </div>
+                <!-- {% comment %} <div class="review-slide">
+                    <img src="./assets/testimonail.png" alt="image">
+                    <p>Testimonial content from person 2.</p>
+                </div> {% endcomment %} -->
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    </section>
     <section class="contact-section" id="contact">
         <div class="contact-container container">
             <div class="contact-content">
@@ -421,7 +475,8 @@ Your special day, our grand space - a traditional approach with modern comforts.
             <div class="contact-form gradient-border1">
                 <h2>Start Your Celebration Here. We’ll get back to you soon!
                 </h2>
-                <form action="post">
+                <form  id="myForm" method="post" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" value="c634e799-f32b-45bf-94fe-dcd2b730292b"/>
                     <div class="inner">
                         <label class="form-label" for="name">Your Name
                             <input type="text" name="name" id="name">

@@ -129,6 +129,12 @@ li {
 }
 
 /* navbar section */
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
 .navbar-section {
     display: flex;
     list-style: none;
@@ -142,6 +148,7 @@ li {
     /* font-weight: 700; */
     text-transform: capitalize;
     z-index: 10;
+
 }
 
 
@@ -270,6 +277,7 @@ li {
     height: calc(100vh - 100px);
     width: 100%;
     min-height: 400px;
+    margin-top: 70px;
 }
 .hero-section video {
     position: absolute;
@@ -287,7 +295,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(2, 105, 2, 0.2); /* Green light transparent overlay */
+    background: rgba(0, 0, 0, 0.886); /* Green light transparent overlay */
     z-index: -1;
 }
 
@@ -778,6 +786,96 @@ li {
     cursor: pointer;
 }
 
+/* testimonial-section */
+.testimonial-section{
+    padding-block: 5%;
+    background-color: var(--light-green);
+}
+.testimonial-section .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--green-bg);
+    text-align: center;
+}
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.review-slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+   
+}
+
+.review-slide img {
+    max-width: 300px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: rgb(176, 176, 176);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--btn-green);
+}
+.review-slide .content-wrapper{
+    width: 100%;
+    position: relative;
+}
+.testimonial-author{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.review-slide .content-wrapper p{
+   
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    
+    .review-slide .img-wrapper{
+        width: 40%;
+    }
+    .review-slide .content-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .review-slide .content-wrapper p{
+        width: 100%;
+    }
+}
+/* testimonail sectioon end */
+
 /* contact-section */
 .contact-section{
     color: var(--green-bg);
@@ -1009,6 +1107,7 @@ footer{
   /* about page style */
 .banner-section{
     margin-block: 5%;
+    margin-top: 110px;
 }
 
   .banner{
